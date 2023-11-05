@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(51, 50, 51);
+    font-family: 'Open Sans';
+    font-size: 22px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .player {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 60px;
+    gap: 18px;
+  }
+
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .restart-button {
+    display: none; /* Verstecke den Restart-Button standardmäßig */
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a4a4e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .winner {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+  
+  .tic-tac-toe-table {
+    border-spacing: 0;
+    margin: 20px;
+    background-color: transparent;
+  }
+  
+  .tic-tac-toe-table td {
+    width: 100px;
+    height: 100px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+  }
+  
+  .tic-tac-toe-table td[data-index] {
+    border-bottom: 5px solid white;
+    border-right: 5px solid white; 
+  }
+  
+  .tic-tac-toe-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .tic-tac-toe-table td:nth-child(3n+3) {
+    border-right: none;
+  }
+  
+  .tic-tac-toe-table td.cross {
+    color: rgb(241, 182, 5);
+    
+  }
+  
+  .tic-tac-toe-table td.circle {
+    color: rgb(28, 150, 204);
+  }
+  
+  .tic-tac-toe-table tr:last-child td:last-child {
+    border-right: none;
+  }
+  
+  .contentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+  }
+  
+  td:hover {
+    background-color: rgb(74, 74, 78);
+    cursor: pointer;
+  }
+  
+  .color0 {
+    color: rgb(241, 182, 5);
+  }
+  
+  .color1 {
+    color: rgb(28, 150, 204);
+  }
+  
+  .color2 {
+    color: aliceblue;
+  }
+  
+  .winner-display {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+  }

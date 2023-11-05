@@ -1,33 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compadible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compadible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 
-
-
-
-
-
-<body>
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
+<body onload="init()">
+  <h1>
+    <b class="color0">Tic</b>
+    <b class="color1">Tac</b>
+    <b class="color2">Toe</b>
+  </h1>
+  <p class="player" id="currentPlayerDisplay"></p>
+  <div id="winner-display" class="winner-display"></div>
+  <div class="contentDiv">
+    <table id="ticTacToeTable" class="tic-tac-toe-table"></table>
+  </div>
+  <button class="restart-button" onclick="restart()">Neu starten</button>
   <script src="java.js"></script>
 </body>
+
 </html>
